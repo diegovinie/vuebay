@@ -31,6 +31,10 @@ module.exports = {
         exclude: /node_modules/
       },
       {
+        test: /\.(ttf|woff)(\?\S*)?$/,
+        loader: 'file-loader'
+      },
+      {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
