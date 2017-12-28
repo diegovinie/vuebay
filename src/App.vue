@@ -1,7 +1,15 @@
 <template>
   <div id="app">
     <nav-bar></nav-bar>
-    <router-view></router-view>
+    <search/>
+    <el-row>
+      <el-col :span="6">
+        <side-menu></side-menu>
+      </el-col>
+      <el-col :span="18">
+        <list></list>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
@@ -10,9 +18,10 @@
 
 export default {
   name: 'app',
+
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+ 
     }
   }
 }
@@ -25,7 +34,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 h1, h2 {
